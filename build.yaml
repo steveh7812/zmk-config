@@ -35,6 +35,7 @@ include:
   - board: seeeduino_xiao_ble
     shield: corne_central_dongle
   - board: seeeduino_xiao_ble
-    shield: corne_central_dongle prospector_adapter
+    shield: corne_central_dongle dongle_screen
+    artifact-name: dongle_screen
   - board: seeeduino_xiao_ble
     shield: settings_reset
