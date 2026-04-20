@@ -1,19 +1,24 @@
 manifest:
-  defaults:
-    revision: v0.3
+#  defaults:
+#    revision: v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: janpfischer
-      url-base: https://github.com/janpfischer
+    - name: carrefinho                            # <--- add this
+      url-base: https://github.com/carrefinho     # <--- and this
+    #- name: janpfischer
+    #  url-base: https://github.com/janpfischer
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: zmk-dongle-screen
-      remote: janpfischer
-      revision: main
+    - name: prospector-zmk-module                 # <--- and these
+      remote: carrefinho                          # <---
+      revision: feat/new-status-screens           # <---
+    # - name: zmk-dongle-screen
+    #   remote: janpfischer
+    #   revision: main
   self:
     path: config
