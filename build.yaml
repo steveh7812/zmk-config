@@ -32,10 +32,13 @@ include:
     artifact-name: corne_central_left
   - board: nice_nano_v2
     shield: settings_reset
+    artifact-name: settings_reset_nice_nano
   - board: seeeduino_xiao_ble
     shield: corne_central_dongle
+    artifact-name: corne_dongle_no_screen
   - board: seeeduino_xiao_ble
     shield: corne_central_dongle dongle_screen
-    artifact-name: dongle_screen
+    artifact-name: corne_dongle_screen
   - board: seeeduino_xiao_ble
     shield: settings_reset
+    artifacti-name: settings_reset_xiao_ble
